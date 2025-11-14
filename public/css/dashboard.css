@@ -1,0 +1,157 @@
+/* ===== GENERAL ===== */
+body {
+    background: #f4f7fc;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* ===== DARK MODE ===== */
+body.dark {
+    background: #1e1e1e;
+    color: #ddd;
+}
+
+body.dark .dashboard-card,
+body.dark .stat-card,
+body.dark .dashboard-sidebar {
+    background: #2a2a2a;
+    color: #eee;
+    box-shadow: none;
+}
+
+body.dark .dashboard-btn {
+    background: #0a84ff;
+}
+
+/* ===== HEADER ===== */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 40px;
+    background: linear-gradient(135deg, #132e56, #3a8bfd), #f4f7fc;
+    color: rgb(208, 255, 78);
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.avatar {
+    background: #d2ff54;
+    color: #0d6efd;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+}
+
+.darkmode-btn {
+    border: none;
+    font-size: 25px;
+    background: transparent;
+    cursor: pointer;
+}
+
+/* ===== STATS ===== */
+.stats-container {
+    display: flex;
+    gap: 20px;
+    padding: 30px 40px;
+}
+
+.stat-card {
+    flex: 1;
+    background: #132e56;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(190, 255, 126, 0.841);
+    transition: 0.2s;
+    color: #eee;
+    font-family: fantasy;
+}
+
+.stat-card:hover {
+    transform: scale(1.05);
+}
+
+/* ===== LAYOUT ===== */
+.main-layout {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding: 20px 40px;
+    gap: 30px;
+}
+
+/* ===== TARJETAS PRINCIPALES ===== */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 25px;
+}
+
+.dashboard-card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.2s ease;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.dashboard-icon {
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+.dashboard-btn {
+    padding: 10px 18px;
+    border-radius: 8px;
+    background: #132e56;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+    font-family: fantasy;
+}
+
+.dashboard-btn:hover {
+    background: #0b5ed7;
+}
+
+/* ===== SIDEBAR ===== */
+.dashboard-sidebar {
+    background: #3a8bfd;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dashboard-sidebar h4 {
+    margin-bottom: 15px;
+}
+
+.dashboard-sidebar ul {
+    padding-left: 18px;
+    color: #444;
+}
+
+/* ===== FOOTER ===== */
+.dashboard-footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    color: #555;
+    font-size: 14px;
+}
