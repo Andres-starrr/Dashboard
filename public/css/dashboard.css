@@ -155,3 +155,18 @@ body.dark .dashboard-btn {
     color: #555;
     font-size: 14px;
 }
+
+.btn-back-home {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3a8bfd; /* azul */
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-back-home:hover {
+    background-color: #0056b3; /* azul más oscuro */
+}

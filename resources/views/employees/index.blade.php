@@ -49,6 +49,6 @@
         </tbody>
 
     </table>
-
+<a href="{{ url('/') }}" class="btn btn-sm btn-outline-primary">Volver al inicio</a>
 </body>
 </html>
